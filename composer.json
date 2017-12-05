@@ -1,0 +1,41 @@
+{
+  "name": "pe/component-event-manager",
+  "keywords": ["event-manager", "psr-14"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pavlenko Eugeniy",
+      "email": "pavlenko.obs@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.0"
+  },
+  "provide": {
+    "psr/event-manager-implementation": "1.0.0"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://satis.sunnyct.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PE\\Component\\EventManager\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PETest\\Component\\EventManager\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
